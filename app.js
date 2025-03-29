@@ -1,4 +1,3 @@
-// Set Up Handlebars
 const express = require("express");
 const path = require("path");
 const hbs = require("hbs");
@@ -19,5 +18,10 @@ hbs.registerPartials(path.join(__dirname, "views/partials"));
 app.use(express.static(path.join(__dirname, "public")));
 app.use("/", indexRouter);
 app.use("/user", userRouter);
+
+// Listen on port 3000
+app.listen(3000, () => {
+  console.log("Server is running on http://localhost:3000");
+});
 
 module.exports = app;
