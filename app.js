@@ -1,19 +1,23 @@
-const express = require('express');
-const path = require('path');
+// Set Up Handlebars
+const express = require("express");
+const path = require("path");
+const hbs = require("hbs");
+
+const indexRouter = require("./routes/index");
+const userRouter = require("./routes/user");
+
 const app = express();
-const port = 3000;
 
-// Set EJS as the view engine
-app.set('view engine', 'ejs');
+// Set view engine to Handlebars
+app.set("view engine", "hbs");
+app.set("views", path.join(__dirname, "views"));
 
-// Serve static files from the public directory
-app.use(express.static(path.join(__dirname, 'public')));
+// Register partials
+hbs.registerPartials(path.join(__dirname, "views/partials"));
 
-// Import and use the router
-const indexRouter = require('./routes/index');
-app.use('/', indexRouter);  // Ensure this points to your correct router
+// Middleware
+app.use(express.static(path.join(__dirname, "public")));
+app.use("/", indexRouter);
+app.use("/user", userRouter);
 
-// Start the server
-app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
-});
+module.exports = app;
