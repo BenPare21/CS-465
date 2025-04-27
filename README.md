@@ -28,16 +28,16 @@ mongoose.model('Trip', tripSchema);
 ## Functionality
 Throughout the project, I focused on refactoring several parts of the code to improve functionality and efficiency. In particular:
 
-### Refactoring the Trips Controller:
+#### Refactoring the Trips Controller:
 I refactored the code for retrieving trips by implementing better error handling. Originally, the code was more verbose and lacked proper checks for edge cases, such as when no trips are found in the database. By adding clearer error messages and handling unexpected inputs more effectively, the code became more maintainable and easier to debug.
 
-### Reducing Redundancy with Reusable UI Components:
+#### Reducing Redundancy with Reusable UI Components:
 I created reusable components, such as the TripCard component, which allowed me to display individual trips consistently throughout the application. Prior to this, the trip display code was repeated in multiple parts of the UI. By encapsulating the trip display logic into a reusable component, I reduced code duplication and made future updates to the UI more efficient.
 
-### Optimizing Data Fetching:
+#### Optimizing Data Fetching:
 I optimized the process of fetching trips from the MongoDB database. Initially, the data was being fetched in multiple places across the application, leading to unnecessary database queries. I centralized the data retrieval in a dedicated service that handled all interactions with the database. This streamlined the application, reduced load times, and improved the user experience.
 
-### Improving Form Handling and Validation:
+#### Improving Form Handling and Validation:
 I improved the form submission process for adding new trips by adding input validation both on the client and server side. This ensured that only valid data (e.g., required fields like name, code, etc.) was submitted to the database. The validation also helped prevent errors, such as empty or incorrectly formatted inputs, from being sent to the server.
 
 ## Testing
