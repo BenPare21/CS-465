@@ -25,12 +25,12 @@ const tripSchema = new mongoose.Schema({
 mongoose.model('Trip', tripSchema);
 ```
 
-Refactoring for Functionality
+## Functionality
 Throughout the project, I refactored several parts of the code to improve functionality and efficiency. For instance, in the tripsController, I refactored the code for retrieving trips to improve error handling and simplify the logic. This made the code more maintainable and easier to understand.
 
 I also created reusable UI components, such as a TripCard component, which could be used to display individual trips throughout the application. By doing this, I reduced redundancy in the code and improved the overall maintainability. The reusable components made the UI more consistent and easier to update in the future, saving development time.
 
-Testing
+## Testing
 Methods, Endpoints, and Security
 In a full-stack application, testing API endpoints and ensuring their security is a critical task. API testing ensures that the application can retrieve and process data correctly. For instance, I tested routes like /trips/:tripCode to make sure that a specific trip could be fetched by its code:
 
@@ -49,7 +49,7 @@ router
 ```
 By testing these routes and ensuring proper authentication, I ensured that only authorized users could access or modify the application’s data.
 
-Reflection
+## Reflection
 Professional Goals and Skills Learned
 This course has been instrumental in helping me reach my professional goals. I’ve gained practical experience with backend and frontend development, learning how to build a full-stack application using technologies like Express, MongoDB, JWT, and Mongoose. These technologies are commonly used in the industry, and learning how to implement them effectively has been invaluable.
 
