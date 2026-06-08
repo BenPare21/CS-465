@@ -66,3 +66,6 @@ This course has been instrumental in helping me reach my professional goals. I�
 I’ve also developed a deeper understanding of security practices in web applications, such as using JWT for user authentication and ensuring that data is properly protected. I now feel more comfortable with both client-side and server-side development, knowing how to manage data, interact with a database, and implement secure, scalable solutions.
 
 These skills have made me more marketable as a developer, and I feel much more confident pursuing opportunities in full-stack development. I’m excited to continue building upon these skills as I move forward in my career.
+
+-Ben Pare
+
