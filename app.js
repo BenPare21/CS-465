@@ -32,9 +32,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/travel', travelRouter);
-app.use('/api', apiRouter);
+//app.use('/users', usersRouter);
+//app.use('/travel', travelRouter);
+//app.use('/api', apiRouter);
 
 // Error handling (optional but good practice)
 app.use(function(req, res, next) {

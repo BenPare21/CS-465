@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 const Trip = require('../models/travlr');
-const Model = mongoose.model('trips');
+const Model = mongoose.model('Trip');
 
 //Get: trips - lists all the trips
 //Regardless of outcome, refonse must include HTML status code
 //and JSON message to the requesting cleint
-const tripList = async (req, res) =>  {
+const tripsList = async (req, res) =>  {
     const q = await Model
         .find({}) // No filter, return all records
         .exec();
@@ -55,5 +55,5 @@ const tripsFindbyCode = async(req, res) => {
 
 
 module.exports = {
-    tripList
+    tripsList
 };
