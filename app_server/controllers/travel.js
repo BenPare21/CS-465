@@ -1,9 +1,9 @@
-//Handles Travel Page 
+// Handles the travel page
 const fs = require("fs");
 const path = require("path");
 
-// Load JSON Data
-const tripsFilePath = path.join(__dirname, "../data/trips.json");
+// Load JSON data from the project root data directory
+const tripsFilePath = path.join(__dirname, "../../data/trips.json");
 
 const listTrips = (req, res) => {
   try {

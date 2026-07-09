@@ -18,10 +18,10 @@ require('./app_api/models/db');
 var app = express();
 
 // View engine setup
-app.set('views', path.join(__dirname, 'app_server', 'views'));
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
-hbs.registerPartials(path.join(__dirname, 'app_server/views/partials'));
+hbs.registerPartials(path.join(__dirname, 'views', 'partials'));
 
 // Middleware
 app.use(logger('dev'));
